@@ -20,6 +20,7 @@ return {
       'sql',
       'typescript',
       'javascript',
+      'php',
     }
 
     vim.api.nvim_create_autocmd('FileType', {
@@ -39,6 +40,7 @@ return {
         'sql',
         'typescript',
         'javascript',
+        'php',
       },
       callback = function()
         vim.treesitter.start()
