@@ -33,7 +33,8 @@ return {
       opts.adapters = opts.adapters or {}
       opts.adapters['neotest-golang'] = {
         runner = 'gotestsum',
-        testify_enabled = false,
+        testify_enabled = true,
+        warn_test_name_dupes = false,
         go_test_args = {
           '-v',
           '-race',

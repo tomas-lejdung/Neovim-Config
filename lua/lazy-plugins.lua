@@ -11,6 +11,7 @@
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
+
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
 
   -- NOTE: Plugins can also be added by using a table,
@@ -36,7 +37,7 @@ require('lazy').setup({
   require 'kickstart.plugins.blink-cmp',
 
   -- Theme
-  --require 'kickstart.plugins.tokyonight',
+  -- require 'kickstart.plugins.tokyonight',
   -- require 'kickstart.plugins.onedark',
   require 'kickstart.plugins.catppuccin',
   -- require 'kickstart.plugins.gruvbox',
@@ -46,6 +47,7 @@ require('lazy').setup({
   require 'kickstart.plugins.mini',
 
   require 'kickstart.plugins.treesitter',
+  require 'kickstart.plugins.noice',
   -- require 'kickstart.plugins.treesitter_textobjects',
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
