@@ -7,7 +7,7 @@ return {
       'nvim-lua/plenary.nvim',
       'antoinemadec/FixCursorHold.nvim',
       {
-        'nvim-treesitter/nvim-treesitter', -- Optional, but recommended
+        'nvim-treesitter/nvim-treesitter', -- Optional, aut recommended
         branch = 'main', -- NOTE; not the master branch!
         build = function()
           vim.cmd ':TSUpdate go'
@@ -15,7 +15,6 @@ return {
       },
       {
         'fredrikaverpil/neotest-golang',
-        branch = 'fix/subtest-detection',
         dependencies = {
           {
             'leoluz/nvim-dap-go',
@@ -25,7 +24,7 @@ return {
         build = function()
           vim.system({ 'go', 'install', 'gotest.tools/gotestsum@latest' }):wait() -- Optional, but recommended
         end,
-        version = '*',
+        branch = 'main',
       },
       'marilari88/neotest-vitest',
     },

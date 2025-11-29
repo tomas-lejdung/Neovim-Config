@@ -14,11 +14,12 @@ return {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    enable_git_status = false,
     filesystem = {
-      follow_current_file = {
-        enabled = true, -- Only reveal on command
-        leave_dirs_open = false, -- Close previously auto-expanded dirs
-      },
+      -- follow_current_file = {
+      --   enabled = true, -- Only reveal on command
+      --   leave_dirs_open = false, -- Close previously auto-expanded dirs
+      -- },
       window = {
         mappings = {
           ['\\'] = 'close_window',
