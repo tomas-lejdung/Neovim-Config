@@ -123,22 +123,7 @@ return {
             },
           },
         },
-        ts_ls = {
-          settings = {
-            typescript = {
-              inlayHints = {
-                includeInlayParameterNameHints = 'literals',
-                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHints = false,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = false,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayFunctionLikeReturnTypeHints = false,
-                includeInlayEnumMemberValueHints = true,
-              },
-            },
-          },
-        },
+        ts_ls = {},
         eslint = {},
         lua_ls = {
           settings = {
